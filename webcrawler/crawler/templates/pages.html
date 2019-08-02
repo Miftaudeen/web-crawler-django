@@ -1,0 +1,10 @@
+{% extends 'templates/base.html' %}
+{% block content %}
+{% for index, business in businesses%}
+    <div class="col s12 m7">
+    <div class="card horizontal">
+      {{ businesses[index]}}
+      </div>
+    </div>
+{% endfor %}
+{% endblock %}

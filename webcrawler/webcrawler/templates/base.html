@@ -1,0 +1,21 @@
+{% load static %}
+{% include 'materialize/materialize_base.html' %}
+<script src="{% static 'materialize/js/materialize.js' %}"></script>
+<link href="{% static 'materialize/css/materialize.css' %}" type="text/css" rel="stylesheet"/>
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'find_businesses' 0%}">Plumbers</a></li>
+        <li><a href="{% url 'find_businesses' 1%}">Locksmiths</a></li>
+        <li><a href="{% url 'find_businesses' 2%}">Dentists</a></li>
+        <li><a href="{% url 'find_businesses' 3%}">Doctors</a></li>
+        <li><a href="{% url 'find_businesses' 4%}">Veterinarians</a></li>
+        <li><a href="{% url 'find_businesses' 5%}">Attorneys</a></li>
+        <li><a href="{% url 'find_businesses' 6%}">Auto Repairs</a></li>
+        <li><a href="{% url 'find_businesses' 7%}">Auto Insurance</a></li>
+        <li><a href="{% url 'find_businesses' 8%}">Restaurants</a></li>
+      </ul>
+    </div>
+  </nav>
+{% block content %} {% endblock %}
